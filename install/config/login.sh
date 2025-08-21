@@ -2,8 +2,7 @@
 
 # Hyprland launched via UWSM and login directly as user, rely on disk encryption + hyprlock for security
 if ! command -v uwsm &>/dev/null || ! command -v plymouth &>/dev/null; then
-  yay -S --noconfirm --needed uwsm plymouth
-  yay -S --noconfirm --needed plymouth
+  yay -S --noconfirm --needed plymouth uwsm
 fi
 
 # ==============================================================================
@@ -249,7 +248,7 @@ if [ ! -f /etc/systemd/system/plymouth-quit.service.d/wait-for-graphical.conf ];
   sudo mkdir -p /etc/systemd/system/plymouth-quit.service.d
   sudo tee /etc/systemd/system/plymouth-quit.service.d/wait-for-graphical.conf <<'EOF'
 [Unit]
-After=multi-user.target
+After=multi-userconfig.target
 EOF
 fi
 
