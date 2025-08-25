@@ -16,17 +16,17 @@ size = 12.0
 
 [colors]
 [colors.primary]
-background = "#121212"
+background = "#000000"
 foreground = "#bebebe"
-dim_foreground = "#8a8a8d"
+dim_foreground = "#bbb6ba"
 
 [colors.cursor]
-text = "#121212"
-cursor = "#eaeaea"
+text = "#000000"
+cursor = "#e3e3e3"
 
 [colors.vi_mode_cursor]
-text = "#121212"
-cursor = "#eaeaea"
+text = "#000000"
+cursor = "#e3e3e3"
 
 [colors.selection]
 text = "CellForeground"
@@ -36,18 +36,18 @@ background = "#333333"
 black = "#333333"
 red = "#D35F5F"
 green = "#FFC107"
-yellow = "#b91c1c"
+yellow = "#b9354d"
 blue = "#e68e0d"
 magenta = "#D35F5F"
 cyan = "#bebebe"
 white = "#bebebe"
 
 [colors.bright]
-black = "#8a8a8d"
-red = "#B91C1C"
+black = "#bbb6ba"
+red = "#b9354d"
 green = "#FFC107"
 yellow = "#b90a0a"
 blue = "#f59e0b"
-magenta = "#B91C1C"
-cyan = "#eaeaea"
+magenta = "#b9354d"
+cyan = "#e3e3e3"
 white = "#ffffff"
